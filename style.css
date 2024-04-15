@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: var(--purple300);
+    color: white;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1)
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 20px 0;
+}
+a{
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 500;
+}
+  li{
+    color: white;
+    border-bottom: 2px solid white;
+} 
+ul{
+    list-style: none;
+}
+button{
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    transition: 0.2s ease-in-out;
+}
+.hero-section {
+    background-image: url(hero_image\ \(1\).png);
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    scroll-margin: 70px;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-section h1{
+    font-size: 50px;
+}
+.about-music{
+    background: var(--purple500);
+    color: white;
+    padding: 50px;
+    scroll-margin: 65px;
+}
+.primary-btn{
+    background-color: var(--red600) ;
+}
+.about-music  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.about-music  .container h3{
+    font-size: 32px;
+}
+.about-music  .container  .text{
+   font-size: 20px;
+}
+.about-music img{
+   position: relative;
+   top: 400px;
+   margin-top: -400px;
+}
+.aboutmusic-part-two .container{
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.aboutmusic-part-two .container p{
+    text-align: center;
+}
+.secondry-btn{
+    background-color: var(--purple300);
+}
+.video {
+    background-image: url(video.png);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    scroll-margin: 55px;
+}
+.video .container{
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.video .container h3{
+   font-size: 32px;
+}
+.video .container p{
+    font-size: 20px;
+}
+.gift-card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+    scroll-margin: 160px;
+}
+.giftcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    line-height: 1.5;
+}
+.giftcontent h3{
+    align-self: flex-start;
+    font-size: 32px;
+    margin-left: 10px;
+}
+.giftcontent button{
+    align-self: flex-start;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.giftcontent h5{
+    align-self: flex-start;
+    margin-left: 20px;
+}
+hr{
+    color: gray;
+    width: 660px;
+}
+.footer-upper{
+    background-color: var(--purple600);
+    padding: 20px;
+    margin-top: 100px;
+}
+.footer-upper .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.footer-links li{
+   border: none;
+   line-height: 1.5;
+}
+
+.footer-links h4{
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
